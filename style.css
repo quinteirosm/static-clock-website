@@ -1,30 +1,31 @@
-body{
-    background-color: coral;
+body {
+    background-color: rebeccapurple;
     padding: 0;
     margin: 0;
 }
 
-.clock{
+.clock {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-color: antiquewhite;
     margin: 100px auto 0px auto;
     position: relative;
-    border:20px solid cornsilk;
-
+    border: 20px solid cornsilk;
 }
-.center{
+
+.center {
     background-color: #000;
     position: absolute;
     left: calc(50% - 10px);
-    top:  calc(50% - 10px);
+    top: calc(50% - 10px);
     width: 20px;
     height: 20px;
     border-radius: 50%;
     z-index: 20;
 }
-.hourHand{
+
+.hourHand {
     width: 10px;
     height: 75px;
     background-color: #000;
@@ -35,10 +36,10 @@ body{
     left: 145px;
     z-index: 10;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-      transform: rotate(360deg);
-
+    transform: rotate(360deg);
 }
-.minuteHand{
+
+.minuteHand {
     width: 5px;
     height: 120px;
     background-color: #000;
@@ -49,13 +50,13 @@ body{
     left: 147px;
     z-index: 9;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-      transform: rotate(90deg);
-
+    transform: rotate(90deg);
 }
-.secondHand{
+
+.secondHand {
     width: 2px;
     height: 120px;
-    background-color:red;
+    background-color: red;
     transform-origin: bottom center;
     border-radius: 4px;
     position: absolute;
@@ -65,9 +66,9 @@ body{
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     z-index: 8;
     transform: rotate(360deg);
-
 }
-.time{
+
+.time {
     position: absolute;
     top: 45%;
     left: 10%;
@@ -75,89 +76,101 @@ body{
     background-color: #fff;
     padding: 5px;
     display: block;
-    box-shadow: inset 0px 2px 5px rgba(0,0,0,.4);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     min-width: 70px;
     height: 15px;
-
 }
-.time small{
-    color:red;
+
+.time small {
+    color: red;
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-.clock ul{
+.clock ul {
     list-style: none;
     padding: 0;
-
 }
-.clock ul li{
+
+.clock ul li {
     position: absolute;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     text-align: center;
     line-height: 20px;
     font-size: 10px;
-    color:red;
+    color: red;
 }
-.clock ul li:nth-child(1){
+
+.clock ul li:nth-child(1) {
     right: 22%;
-    top:6.5%;
+    top: 6.5%;
 }
-.clock ul li:nth-child(2){
+
+.clock ul li:nth-child(2) {
     right: 6%;
-    top:25%;
+    top: 25%;
 }
-.clock ul li:nth-child(3){
+
+.clock ul li:nth-child(3) {
     right: 1%;
-    top:calc(50% - 10px);
-    color:#000;
+    top: calc(50% - 10px);
+    color: #000;
     font-size: 20px;
     font-weight: bold;
 }
-.clock ul li:nth-child(4){
+
+.clock ul li:nth-child(4) {
     right: 6%;
-    top:69%;
+    top: 69%;
 }
-.clock ul li:nth-child(5){
+
+.clock ul li:nth-child(5) {
     right: 22%;
-    top:84%;
+    top: 84%;
 }
-.clock ul li:nth-child(6){
+
+.clock ul li:nth-child(6) {
     right: calc(50% - 10px);
-    top:calc(99% - 20px);
-    color:#000;
+    top: calc(99% - 20px);
+    color: #000;
     font-size: 20px;
     font-weight: bold;
 }
-.clock ul li:nth-child(7){
+
+.clock ul li:nth-child(7) {
     left: 22%;
-    top:84%;
+    top: 84%;
 }
-.clock ul li:nth-child(8){
+
+.clock ul li:nth-child(8) {
     left: 6%;
-    top:69%;
+    top: 69%;
 }
-.clock ul li:nth-child(9){
+
+.clock ul li:nth-child(9) {
     left: 1%;
-    top:calc(50% - 10px);
-    color:#000;
+    top: calc(50% - 10px);
+    color: #000;
     font-size: 20px;
     font-weight: bold;
 }
-.clock ul li:nth-child(10){
+
+.clock ul li:nth-child(10) {
     left: 6%;
-    top:25%;
+    top: 25%;
 }
-.clock ul li:nth-child(11){
+
+.clock ul li:nth-child(11) {
     left: 22%;
-    top:6.5%;
+    top: 6.5%;
 }
-.clock ul li:nth-child(12){
+
+.clock ul li:nth-child(12) {
     right: calc(50% - 10px);
-    top:1%;
-    color:#000;
+    top: 1%;
+    color: #000;
     font-size: 20px;
     font-weight: bold;
 }
